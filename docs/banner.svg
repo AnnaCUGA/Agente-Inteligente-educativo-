@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-labelledby="t d">
+  <title id="t">Agente inteligente educativo. Proyecto de Ana Cuevas en Fundación Televisa, código privado.</title>
+  <desc id="d">Banner animado: un docente escribe por WhatsApp, un orquestador entiende la intención y la reparte entre agentes de IA, un modelo de visión que revisa la foto de evidencia y la base de datos con el avance; después responde.</desc>
+  <defs>
+    <pattern id="p" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#aaa3cd" opacity="0.16"/></pattern>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="70"/></filter>
+    <clipPath id="marco"><rect width="1200" height="420" rx="20"/></clipPath>
+    <style>
+      .ti { font: 800 50px -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #edeafb; letter-spacing: -1.5px; }
+      .ti2 { font: 800 50px -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #ff9a8b; letter-spacing: -1.5px; }
+      .pill { font: 600 16px -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #7fe0c9; }
+      .build { font: 500 24px -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #aaa3cd; }
+      .w { font: 700 24px -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #ff9a8b; opacity: 0; animation: rot 12s infinite; }
+      .tg { font: 500 13px -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #aaa3cd; }
+      .n { font: 600 15px ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; fill: #edeafb; }
+      .s { font: 400 12px ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; fill: #aaa3cd; }
+      .cur { fill: #ff9a8b; animation: blink 1s steps(1) infinite; }
+      @keyframes rot { 0% { opacity: 0 } 3% { opacity: 1 } 22% { opacity: 1 } 25% { opacity: 0 } 100% { opacity: 0 } }
+      @keyframes blink { 50% { opacity: 0 } }
+    </style>
+  </defs>
+  <g clip-path="url(#marco)">
+    <rect width="1200" height="420" fill="#15122a"/>
+    <circle cx="150" cy="60" r="170" fill="#ff9a8b" opacity="0.20" filter="url(#blur)">
+      <animate attributeName="cx" values="150;330;150" dur="16s" repeatCount="indefinite"/></circle>
+    <circle cx="1040" cy="400" r="190" fill="#7fe0c9" opacity="0.16" filter="url(#blur)">
+      <animate attributeName="cx" values="1040;860;1040" dur="19s" repeatCount="indefinite"/></circle>
+    <rect width="1200" height="420" fill="url(#p)"/>
+  </g>
+
+  <rect x="64" y="52" width="452" height="34" rx="17" fill="#1f1b3a" stroke="#373063"/>
+  <circle cx="84" cy="69" r="5" fill="#7fe0c9"><animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/></circle>
+  <text class="pill" x="100" y="75">Proyecto en Fundación Televisa · código privado</text>
+
+  <text class="ti" x="60" y="156">Agente inteligente</text>
+  <text class="ti2" x="60" y="216">educativo</text>
+  <text class="build" x="64" y="284">Por WhatsApp,</text>
+  <text class="w" style="animation-delay:0s" x="242" y="284">conversa sin menús</text><text class="w" style="animation-delay:3s" x="242" y="284">revisa fotos de evidencia</text><text class="w" style="animation-delay:6s" x="242" y="284">registra grupos</text><text class="w" style="animation-delay:9s" x="242" y="284">acompaña el avance</text>
+  <rect class="cur" x="230" y="262" width="3" height="28"/>
+
+  <rect x="64" y="330" width="44" height="26" rx="13" fill="none" stroke="#373063"/><text class="tg" x="86" y="347.5" text-anchor="middle">n8n</text>
+  <rect x="116" y="330" width="89" height="26" rx="13" fill="none" stroke="#373063"/><text class="tg" x="160.5" y="347.5" text-anchor="middle">AI agents</text>
+  <rect x="213" y="330" width="68" height="26" rx="13" fill="none" stroke="#373063"/><text class="tg" x="247" y="347.5" text-anchor="middle">Gemini</text>
+  <rect x="289" y="330" width="133" height="26" rx="13" fill="none" stroke="#373063"/><text class="tg" x="355.5" y="347.5" text-anchor="middle">Computer vision</text>
+  <rect x="430" y="330" width="59" height="26" rx="13" fill="none" stroke="#373063"/><text class="tg" x="459.5" y="347.5" text-anchor="middle">MySQL</text>
+
+  <rect x="596" y="52" width="556" height="316" rx="16" fill="#1f1b3a" stroke="#373063"/>
+  <g transform="translate(617 82) scale(0.93)">
+    <path d="M150 50 H205" fill="none" stroke="#7fe0c9" stroke-width="2"/>
+    <path d="M355 50 H400" fill="none" stroke="#7fe0c9" stroke-width="2"/>
+    <path id="s1" d="M250 90 C250 150 85 130 85 190" fill="none" stroke="#4a4280" stroke-width="1.5" stroke-dasharray="5 5"/>
+    <path id="s2" d="M280 90 V190" fill="none" stroke="#4a4280" stroke-width="1.5" stroke-dasharray="5 5"/>
+    <path id="s3" d="M310 90 C310 150 475 130 475 190" fill="none" stroke="#4a4280" stroke-width="1.5" stroke-dasharray="5 5"/>
+    <circle r="5" fill="#7fe0c9"><animateMotion dur="3.6s" repeatCount="indefinite" path="M150 50 H205 M355 50 H400" keyPoints="0;0.55;0.55;1" keyTimes="0;0.3;0.7;1" calcMode="linear"/></circle>
+    <circle r="3.5" fill="#ff9a8b"><animateMotion dur="3.6s" begin="0.9s" repeatCount="indefinite" keyPoints="0;1;0;0" keyTimes="0;0.2;0.4;1" calcMode="linear"><mpath href="#s1"/></animateMotion></circle>
+    <circle r="3.5" fill="#ff9a8b"><animateMotion dur="3.6s" begin="1.1s" repeatCount="indefinite" keyPoints="0;1;0;0" keyTimes="0;0.2;0.4;1" calcMode="linear"><mpath href="#s2"/></animateMotion></circle>
+    <circle r="3.5" fill="#ff9a8b"><animateMotion dur="3.6s" begin="1.3s" repeatCount="indefinite" keyPoints="0;1;0;0" keyTimes="0;0.2;0.4;1" calcMode="linear"><mpath href="#s3"/></animateMotion></circle>
+
+    <rect x="0" y="20" width="150" height="60" rx="10" fill="#15122a" stroke="#373063" stroke-width="1.5"/>
+    <text class="n" x="16" y="46">Docente</text><text class="s" x="16" y="65">texto o foto</text>
+    <rect x="205" y="10" width="150" height="80" rx="10" fill="#15122a" stroke="#ff9a8b" stroke-width="2">
+      <animate attributeName="stroke-opacity" values="1;0.45;1" dur="3.6s" repeatCount="indefinite"/></rect>
+    <text class="n" x="221" y="44">Orquestador</text><text class="s" x="221" y="64">entiende y reparte</text>
+    <rect x="400" y="20" width="150" height="60" rx="10" fill="#15122a" stroke="#373063" stroke-width="1.5"/>
+    <text class="n" x="416" y="46">Respuesta</text><text class="s" x="416" y="65">por WhatsApp</text>
+
+    <rect x="10" y="190" width="150" height="56" rx="28" fill="#15122a" stroke="#373063" stroke-width="1.5"/>
+    <text class="n" x="85" y="215" text-anchor="middle">Agentes</text><text class="s" x="85" y="233" text-anchor="middle">registro y charla</text>
+    <rect x="205" y="190" width="150" height="56" rx="28" fill="#15122a" stroke="#373063" stroke-width="1.5"/>
+    <text class="n" x="280" y="215" text-anchor="middle">Visión</text><text class="s" x="280" y="233" text-anchor="middle">revisa la foto</text>
+    <rect x="400" y="190" width="150" height="56" rx="28" fill="#15122a" stroke="#373063" stroke-width="1.5"/>
+    <text class="n" x="475" y="215" text-anchor="middle">MySQL</text><text class="s" x="475" y="233" text-anchor="middle">grupos y avance</text>
+  </g>
+</svg>

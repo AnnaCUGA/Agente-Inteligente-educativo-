@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" role="img" aria-labelledby="t d">
+  <title id="t">Ejemplo de conversación con el asistente</title>
+  <desc id="d">Un docente manda la foto de una actividad. El asistente confirma que es evidencia escolar, propone el grupo y pregunta la lección. El docente dice "otra actividad"; el asistente no adivina y pregunta si es una lección del manual o una actividad aparte. El docente responde "lección 4"; el asistente revisa la foto contra el criterio de esa lección, la registra y le dice que lleva 5 de 20. A la derecha se ve, paso a paso, lo que pasa por dentro. Datos ficticios.</desc>
+  <defs>
+    <pattern id="p" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#aaa3cd" opacity="0.14"/></pattern>
+    <style>
+      .hd { font: 700 16px -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #edeafb; }
+      .on { font: 500 12px -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #7fe0c9; }
+      .av { font: 800 13px -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #15122a; }
+      .b { font: 400 15px -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #edeafb; }
+      .u { font: 600 15px -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #15122a; }
+      .cap { font: 500 13px -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #15122a; }
+      .hl { font-weight: 700; fill: #7fe0c9; }
+      .tt { font: 500 14px ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; fill: #aaa3cd; }
+      .pr { font: 600 14px ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; fill: #7fe0c9; }
+      .lb { font: 600 14px ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; fill: #7fe0c9; }
+      .lw { font: 600 14px ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; fill: #ff9a8b; }
+      .tx { font: 400 14px ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; fill: #edeafb; }
+      .nt { font: 400 12px -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #aaa3cd; }
+      .cur { fill: #ff9a8b; animation: blink 1s steps(1) infinite; }
+      @keyframes blink { 50% { visibility: hidden } }
+    </style>
+  </defs>
+
+  <!-- ── chat ── -->
+  <rect x="24.5" y="24.5" width="600" height="591" rx="16" fill="#1f1b3a" stroke="#373063"/>
+  <rect x="24.5" y="24.5" width="600" height="591" rx="16" fill="url(#p)"/>
+  <path d="M24.5 80 V40.5 a16 16 0 0 1 16 -16 H608.5 a16 16 0 0 1 16 16 V80 Z" fill="#15122a"/>
+  <line x1="24" y1="80" x2="625" y2="80" stroke="#373063"/>
+  <circle cx="60" cy="52" r="16" fill="#ff9a8b"/><text class="av" x="60" y="57" text-anchor="middle">IA</text>
+  <text class="hd" x="88" y="49">Asistente educativo</text>
+  <circle cx="92" cy="63" r="3.5" fill="#7fe0c9"><animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/></circle>
+  <text class="on" x="100" y="67">en línea · WhatsApp</text>
+
+  <!-- 1. foto del docente -->
+  <g opacity="0"><set attributeName="opacity" to="1" begin="0.4s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" from="0 12" to="0 0" begin="0.4s" dur="0.35s" fill="freeze"/>
+    <rect x="404" y="100" width="200" height="124" rx="14" fill="#ff9a8b"/>
+    <rect x="412" y="108" width="184" height="88" rx="8" fill="#f7c9c0"/>
+    <circle cx="440" cy="130" r="9" fill="#f2d48a"/>
+    <path d="M412 196 L466 142 L502 176 L528 154 L596 196 Z" fill="#e3877a"/>
+    <text class="cap" x="420" y="215">📷 foto de la actividad</text>
+  </g>
+
+  <!-- escribiendo… (1) -->
+  <g opacity="0"><set attributeName="opacity" to="1" begin="1.0s"/><set attributeName="opacity" to="0" begin="2.2s" fill="freeze"/>
+    <rect x="44" y="240" width="70" height="36" rx="18" fill="#262046" stroke="#373063"/>
+    <circle cx="64" cy="258" r="4" fill="#aaa3cd"><animate attributeName="cy" values="258;252;258" dur="0.9s" repeatCount="indefinite"/></circle>
+    <circle cx="79" cy="258" r="4" fill="#aaa3cd"><animate attributeName="cy" values="258;252;258" dur="0.9s" begin="0.15s" repeatCount="indefinite"/></circle>
+    <circle cx="94" cy="258" r="4" fill="#aaa3cd"><animate attributeName="cy" values="258;252;258" dur="0.9s" begin="0.3s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- 2. asistente: pide la lección -->
+  <g opacity="0"><set attributeName="opacity" to="1" begin="2.2s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" from="0 12" to="0 0" begin="2.2s" dur="0.35s" fill="freeze"/>
+    <rect x="44" y="240" width="440" height="66" rx="14" fill="#262046" stroke="#373063"/>
+    <text class="b" x="60" y="266">📸 ¡Recibí tu foto! La registro en <tspan class="hl">4° B (matutino)</tspan>.</text>
+    <text class="b" x="60" y="290">¿De qué lección es?</text>
+  </g>
+
+  <!-- 3. docente: "otra actividad" -->
+  <g opacity="0"><set attributeName="opacity" to="1" begin="3.8s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" from="0 12" to="0 0" begin="3.8s" dur="0.35s" fill="freeze"/>
+    <rect x="428" y="322" width="176" height="40" rx="14" fill="#ff9a8b"/>
+    <text class="u" x="446" y="347">Fue otra actividad</text>
+  </g>
+
+  <!-- escribiendo… (2) -->
+  <g opacity="0"><set attributeName="opacity" to="1" begin="4.4s"/><set attributeName="opacity" to="0" begin="5.6s" fill="freeze"/>
+    <rect x="44" y="378" width="70" height="36" rx="18" fill="#262046" stroke="#373063"/>
+    <circle cx="64" cy="396" r="4" fill="#aaa3cd"><animate attributeName="cy" values="396;390;396" dur="0.9s" repeatCount="indefinite"/></circle>
+    <circle cx="79" cy="396" r="4" fill="#aaa3cd"><animate attributeName="cy" values="396;390;396" dur="0.9s" begin="0.15s" repeatCount="indefinite"/></circle>
+    <circle cx="94" cy="396" r="4" fill="#aaa3cd"><animate attributeName="cy" values="396;390;396" dur="0.9s" begin="0.3s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- 4. asistente: aclara sin adivinar -->
+  <g opacity="0"><set attributeName="opacity" to="1" begin="5.6s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" from="0 12" to="0 0" begin="5.6s" dur="0.35s" fill="freeze"/>
+    <rect x="44" y="378" width="440" height="90" rx="14" fill="#262046" stroke="#373063"/>
+    <text class="b" x="60" y="404">¿Esa actividad es una de las lecciones del manual?</text>
+    <text class="b" x="60" y="428">Si sí, dime cuál. Si fue aparte, la registro como</text>
+    <text class="b" x="60" y="452"><tspan class="hl">Contenido Adicional</tspan> 😊</text>
+  </g>
+
+  <!-- 5. docente: "lección 4" -->
+  <g opacity="0"><set attributeName="opacity" to="1" begin="7.4s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" from="0 12" to="0 0" begin="7.4s" dur="0.35s" fill="freeze"/>
+    <rect x="452" y="484" width="152" height="40" rx="14" fill="#ff9a8b"/>
+    <text class="u" x="470" y="509">Es la lección 4</text>
+  </g>
+
+  <!-- escribiendo… (3) -->
+  <g opacity="0"><set attributeName="opacity" to="1" begin="8.0s"/><set attributeName="opacity" to="0" begin="9.3s" fill="freeze"/>
+    <rect x="44" y="540" width="70" height="36" rx="18" fill="#262046" stroke="#373063"/>
+    <circle cx="64" cy="558" r="4" fill="#aaa3cd"><animate attributeName="cy" values="558;552;558" dur="0.9s" repeatCount="indefinite"/></circle>
+    <circle cx="79" cy="558" r="4" fill="#aaa3cd"><animate attributeName="cy" values="558;552;558" dur="0.9s" begin="0.15s" repeatCount="indefinite"/></circle>
+    <circle cx="94" cy="558" r="4" fill="#aaa3cd"><animate attributeName="cy" values="558;552;558" dur="0.9s" begin="0.3s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- 6. asistente: registrada -->
+  <g opacity="0"><set attributeName="opacity" to="1" begin="9.3s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" from="0 12" to="0 0" begin="9.3s" dur="0.35s" fill="freeze"/>
+    <rect x="44" y="540" width="440" height="64" rx="14" fill="#262046" stroke="#7fe0c9"/>
+    <text class="b" x="60" y="566">✅ Listo: <tspan class="hl">Lección 4</tspan> registrada en 4° B.</text>
+    <text class="b" x="60" y="590">Ya llevas 5 de 20 en este grupo 🎉</text>
+  </g>
+
+  <!-- ── lo que pasa por dentro ── -->
+  <rect x="648.5" y="24.5" width="527" height="591" rx="16" fill="#15122a" stroke="#373063"/>
+  <path d="M648.5 70 V40.5 a16 16 0 0 1 16 -16 H1159.5 a16 16 0 0 1 16 16 V70 Z" fill="#1f1b3a"/>
+  <line x1="648" y1="70" x2="1176" y2="70" stroke="#373063"/>
+  <circle cx="676" cy="47" r="6" fill="#ff9a8b"/><circle cx="698" cy="47" r="6" fill="#f2d48a"/><circle cx="720" cy="47" r="6" fill="#7fe0c9"/>
+  <text class="tt" x="912" y="52" text-anchor="middle">lo que pasa por dentro</text>
+
+  <g opacity="0"><set attributeName="opacity" to="1" begin="0.6s" fill="freeze"/><text class="pr" x="672" y="112">›</text><text class="lb" x="692" y="112">mensaje</text><text class="tx" x="790" y="112">llegó una foto</text></g>
+  <g opacity="0"><set attributeName="opacity" to="1" begin="1.4s" fill="freeze"/><text class="pr" x="672" y="146">›</text><text class="lb" x="692" y="146">visión</text><text class="tx" x="790" y="146">¿es evidencia escolar? sí ✔</text></g>
+  <g opacity="0"><set attributeName="opacity" to="1" begin="1.9s" fill="freeze"/><text class="pr" x="672" y="180">›</text><text class="lb" x="692" y="180">contexto</text><text class="tx" x="790" y="180">un solo grupo posible: 4° B</text></g>
+  <g opacity="0"><set attributeName="opacity" to="1" begin="2.2s" fill="freeze"/><text class="pr" x="672" y="214">›</text><text class="lw" x="692" y="214">falta</text><text class="tx" x="790" y="214">el número de lección</text></g>
+  <g opacity="0"><set attributeName="opacity" to="1" begin="4.2s" fill="freeze"/><text class="pr" x="672" y="248">›</text><text class="lb" x="692" y="248">docente</text><text class="tx" x="790" y="248">"otra actividad": ambiguo</text></g>
+  <g opacity="0"><set attributeName="opacity" to="1" begin="5.3s" fill="freeze"/><text class="pr" x="672" y="282">›</text><text class="lw" x="692" y="282">regla</text><text class="tx" x="790" y="282">no adivinar: ¿lección o aparte?</text></g>
+  <g opacity="0"><set attributeName="opacity" to="1" begin="7.8s" fill="freeze"/><text class="pr" x="672" y="316">›</text><text class="lb" x="692" y="316">lección</text><text class="tx" x="790" y="316">L4, la dijo el docente ✔</text></g>
+  <g opacity="0"><set attributeName="opacity" to="1" begin="8.4s" fill="freeze"/><text class="pr" x="672" y="350">›</text><text class="lb" x="692" y="350">visión</text><text class="tx" x="790" y="350">cumple el criterio de la L4 ✔</text></g>
+  <g opacity="0"><set attributeName="opacity" to="1" begin="8.9s" fill="freeze"/><text class="pr" x="672" y="384">›</text><text class="lb" x="692" y="384">bitácora</text><text class="tx" x="790" y="384">guarda L4 · 4° B · válida</text></g>
+  <g opacity="0"><set attributeName="opacity" to="1" begin="9.3s" fill="freeze"/><text class="pr" x="672" y="418">›</text><text class="lb" x="692" y="418">avance</text><text class="tx" x="790" y="418">5 / 20 lecciones en el grupo</text></g>
+  <rect class="cur" x="672" y="440" width="9" height="18" opacity="0"><set attributeName="opacity" to="1" begin="9.6s" fill="freeze"/></rect>
+
+  <text class="nt" x="672" y="592">Ejemplo con datos ficticios: escuela, grupo y docente inventados.</text>
+</svg>
